@@ -1,0 +1,23 @@
+.column {
+  max-width: 792px;
+  margin: 0 auto;
+  padding: 24px 16px 40px;
+}
+
+.notFound {
+  max-width: 792px;
+  min-height: 50vh;
+  margin: 0 auto;
+  padding: 64px 16px;
+}
+
+.notFound h1 {
+  margin-bottom: 16px;
+  font-family: var(--display);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+}
+
+.notFound a {
+  color: var(--red-dark);
+}

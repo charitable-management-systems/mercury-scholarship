@@ -1,0 +1,63 @@
+.section {
+  padding: 40px 0;
+  border-top: 1px solid var(--rule);
+}
+
+.section:first-child {
+  border-top: 0;
+}
+
+.title {
+  margin-bottom: 16px;
+  font-family: var(--display);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.title::before {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 4px;
+  margin-bottom: 14px;
+  background-color: var(--red);
+}
+
+.body > * + * {
+  margin-top: 14px;
+}
+
+.body ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+.body li {
+  position: relative;
+  padding-left: 22px;
+}
+
+.body li + li,
+.body li > ul {
+  margin-top: 8px;
+}
+
+.body li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 8px;
+  height: 8px;
+  background-color: var(--red);
+}
+
+.body li li::before {
+  background-color: var(--ink);
+}
+
+.body a {
+  color: var(--red-dark);
+}

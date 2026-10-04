@@ -1,0 +1,145 @@
+.hero {
+  display: grid;
+  grid-template-rows: clamp(440px, 68vh, 680px) auto;
+  background-color: var(--black);
+  color: #ffffff;
+}
+
+.media,
+.shade,
+.text {
+  grid-area: 1 / 1;
+}
+
+.media {
+  position: relative;
+  overflow: hidden;
+}
+
+.shade {
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(11, 11, 12, 0.92) 0%,
+    rgba(11, 11, 12, 0.8) 30%,
+    rgba(11, 11, 12, 0) 62%
+  );
+}
+
+.text {
+  z-index: 2;
+  align-self: center;
+  max-width: 620px;
+  padding: 40px 32px;
+}
+
+.eyebrow {
+  margin-bottom: 12px;
+  color: #ffffff;
+  font-family: var(--display);
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 32px;
+  height: 4px;
+  margin-right: 12px;
+  vertical-align: middle;
+  background-color: var(--red);
+}
+
+.title {
+  font-family: var(--display);
+  font-size: clamp(2.5rem, 5.4vw, 4.25rem);
+  font-weight: 700;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.lede {
+  max-width: 460px;
+  margin: 20px 0 28px;
+  font-size: 1.25rem;
+  line-height: 1.45;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+  border-top: 4px solid var(--red);
+}
+
+.stats > div {
+  padding: 20px 32px;
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.stats > div:first-child {
+  border-left: 0;
+}
+
+.stats dt {
+  font-family: var(--display);
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.stats dd {
+  margin: 0;
+  font-family: var(--display);
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.stats .deadline {
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    grid-template-rows: clamp(480px, 72vh, 640px) auto;
+  }
+
+  .shade {
+    background: linear-gradient(
+      0deg,
+      rgba(11, 11, 12, 0.95) 0%,
+      rgba(11, 11, 12, 0.75) 45%,
+      rgba(11, 11, 12, 0.1) 80%
+    );
+  }
+
+  .text {
+    align-self: end;
+    padding: 24px 16px 28px;
+  }
+
+  .lede {
+    font-size: 1.1rem;
+    margin: 14px 0 20px;
+  }
+
+  .stats > div {
+    padding: 14px 16px;
+  }
+
+  .stats dt {
+    font-size: 0.8rem;
+  }
+
+  .stats .deadline {
+    font-size: 1.15rem;
+    line-height: 1.2;
+    padding-top: 4px;
+  }
+}
