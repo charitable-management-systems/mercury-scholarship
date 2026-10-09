@@ -20,7 +20,7 @@ Source lives on `main`; the built site lives on `gh-pages`.
 
 `src/content/site.ts` holds the values that change:
 
-- `APPLY_URL`: while `null`, the Apply buttons show "Applications opening soon". Set it to the application portal URL to turn them into links.
+- `APPLY_URL`: the application portal the Apply buttons link to. Set it to `null` to show "Applications opening soon" instead.
 - `DEADLINE`: while `null`, the site says "to be announced". Set it to the date as it should read, e.g. `"March 16, 2027"`.
 - Contact details and the header navigation.
 

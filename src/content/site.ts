@@ -1,9 +1,9 @@
 // Everything that changes from year to year lives here.
 
-// Set to the application portal URL once it is live, e.g.
-// "https://apply.mercuryuniversityscholarships.com/application/login".
-// While null, the Apply buttons render as a disabled "opening soon" label.
-export const APPLY_URL: string | null = null;
+// Application portal. Set to null to show a disabled "Applications opening
+// soon" label instead of the Apply buttons.
+export const APPLY_URL: string | null =
+  "https://apply.mercuryuniversityscholarships.com/application/login";
 
 // Set to the deadline as it should read on the page, e.g. "March 16, 2027".
 // While null, the site says "to be announced".
