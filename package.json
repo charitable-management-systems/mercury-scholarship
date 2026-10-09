@@ -14,7 +14,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
-    "deploy": "gatsby clean && gatsby build --prefix-paths && gh-pages -d public"
+    "deploy": "gatsby clean && gatsby build && gh-pages -d public"
   },
   "dependencies": {
     "@fontsource/barlow": "^5.3.0",

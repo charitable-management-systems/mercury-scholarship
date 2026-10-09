@@ -11,7 +11,7 @@ npm install
 npm run develop   # http://localhost:8000
 npm run build
 npm run typecheck
-npm run deploy    # clean build with the path prefix, then push public/ to the gh-pages branch
+npm run deploy    # clean build, then push public/ to the gh-pages branch
 ```
 
 Source lives on `main`; the built site lives on `gh-pages`.
@@ -26,11 +26,9 @@ Source lives on `main`; the built site lives on `gh-pages`.
 
 Section text is in `src/sections/`, one file per heading.
 
-## Moving to a custom domain
+## Domain
 
-1. Remove `pathPrefix` from `gatsby-config.ts` and set `siteUrl` to the domain.
-2. Add `static/CNAME` containing the domain.
-3. Drop `--prefix-paths` from the `deploy` script in `package.json`.
+The site is served from https://mercuryuniversityscholarships.com. `static/CNAME` keeps the custom domain attached on every deploy; without it, `gh-pages` would wipe the CNAME file from the branch.
 
 ## Assets
 
