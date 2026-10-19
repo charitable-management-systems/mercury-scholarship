@@ -7,7 +7,7 @@ export const APPLY_URL: string | null =
 
 // Set to the deadline as it should read on the page, e.g. "March 16, 2027".
 // While null, the site says "to be announced".
-export const DEADLINE: string | null = null;
+export const DEADLINE: string | null = "January 31, 2027";
 
 export const deadlineText = DEADLINE ?? "to be announced";
 

@@ -26,8 +26,8 @@ const Hero = () => (
         Scholarship Program
       </h1>
       <p className={styles.lede}>
-        Ten $5,000 scholarships for students enrolled in the Mercury University
-        Trade School Program.
+        Ten $5,000 scholarships for students enrolled at eligible schools in the
+        Mercury University Trade School Program.
       </p>
       <ApplyButton />
     </div>

@@ -1,10 +1,11 @@
 import * as React from "react";
 import Section from "../components/Section";
+import { deadlineText } from "../content/site";
 
 const Rules = () => (
   <Section id="rules" title="Rules and Regulations">
     <ul>
-      <li>Applications must be submitted on or before the stated deadline.</li>
+      <li>Applications must be submitted on or before {deadlineText}.</li>
       <li>Incomplete or late applications will not be considered.</li>
       <li>
         All information provided in the application must be accurate and
